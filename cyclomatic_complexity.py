@@ -35,7 +35,7 @@ class CyclomaticComplexity:
 
 
     def display_complexity(self):
-        with open('whiletest.py') as f:
+        with open(self.file) as f:
             tree = ast.parse(f.read())  # parse the file
         self.visit_FunctionDef(tree)
 
